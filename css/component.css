@@ -42,8 +42,8 @@ a {color:#666;}
 	left: 0;
 	top: 0;
 	padding: 1em;
-background: #fff;
-background-image: url(../noisy-texture.png);
+	background: rgba(255,255,255,0.8);
+	background-image: url(../noisy-texture.png);
 }
 
 /* Whithout JS, we use :target */
