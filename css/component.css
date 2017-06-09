@@ -1,259 +1,266 @@
-
 /* Needed for a fluid height: */
 
-html, body, .container, .main { height: 100%;}
-    
-    
-body {
-/* background: #aac1bf; bluegreen color */
-background-image: linear-gradient(to top, #35c7e9 0%, #0687be 100%);
-background-image: url(../noisy-texture.png);
-overflow: visible;
-color:#666;
+html,
+body,
+.container,
+.main {
+    height: 100%;
 }
 
+body {
+    /* background: #aac1bf; bluegreen color */
+    background: url(../noisy-texture.png), linear-gradient(to top, #35c7e9 0%, #0687be 100%) ;
+    overflow: visible;
+    background-blend-mode: multiply, multiply;
+    color: #666;
+}
 
-    
-a {color:#666;}
+a {
+    color: #666;
+}
 
 
 /* main wrapper */
+
 .cbp-contentslider {
-	width: 100%;
-	height: 70%;
-	margin: 1em auto;
-	position: relative;
-	box-shadow: 0 2px 3px rgba(0,0,0, 0.3)}
-
-.cbp-contentslider > ul {
-	list-style: none;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	padding: 0;
-	margin: 0;
+    width: 100%;
+    height: 70%;
+    margin: 1em auto;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
 }
 
-.cbp-contentslider > ul li {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	padding: 1em;
-	background: rgba(255,255,255,0.9);
-	background-image: url(../noisy-texture.png);
+.cbp-contentslider>ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
+
+.cbp-contentslider>ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.9);
+    background-image: url(../noisy-texture.png);
+}
+
 
 /* Whithout JS, we use :target */
-.cbp-contentslider > ul li:target {
-	z-index: 100;
+
+.cbp-contentslider>ul li:target {
+    z-index: 100;
 }
 
 .cbp-contentslider nav {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 3.313em;
-	z-index: 1000;
-	border-top: 0px solid #4F2D21;
-	overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.313em;
+    z-index: 1000;
+    border-top: 0px solid #4F2D21;
+    overflow: hidden;
 }
 
 .cbp-contentslider nav a {
-	float: left;
-	display: block;
-	width: 20%;
-	height: 100%;
-	font-weight: 900;
-	letter-spacing: 0.1em;
-	overflow: hidden;
+    float: left;
+    display: block;
+    width: 20%;
+    height: 100%;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    overflow: hidden;
     font-size: .9em;
-	outline: none;
-	text-align: center;
-	line-height: 3;
-	position: relative;
-	padding-left: 3.125em;
-	text-transform: uppercase;
-	border-right: 1px solid #dedede;
-	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    outline: none;
+    text-align: center;
+    line-height: 3;
+    position: relative;
+    padding-left: 3.125em;
+    text-transform: uppercase;
+    border-right: 1px solid #dedede;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-
-
 .cbp-contentslider nav a span {
-	display: block;
+    display: block;
 }
 
 .cbp-contentslider nav a:last-child {
-	border: none;
-	box-shadow: 0px 0 #4F2D21; 
-/* fills gap caused by rounding */
+    border: none;
+    box-shadow: 0px 0 #4F2D21;
+    /* fills gap caused by rounding */
 }
 
 .cbp-contentslider nav a:hover {
-	background-color: #999;
-	color: #fff;
+    background-color: #999;
+    color: #fff;
 }
 
 .cbp-contentslider nav a.rc-active {
-	background-color: #999;
-	color: #fff;
+    background-color: #999;
+    color: #fff;
 }
 
+
 /* Iconfont for navigation and headings */
-.cbp-contentslider [class^="icon-"]:before, 
+
+.cbp-contentslider [class^="icon-"]:before,
 .cbp-contentslider [class*=" icon-"]:before {
-	font-family: 'icomoon';
-	font-style: normal;
-	text-align: center;
-	speak: none;
-	font-weight: normal;
-	line-height: 2.5;
-	font-size: 2em;
-	position: absolute;
-	left: 10%;
-	top: 50%;
-	margin: -1.250em 0 0 0;
-	height: 2.500em;
-	width: 2.500em;
-	color: rgba(0,0,0,0.1);
-	-webkit-font-smoothing: antialiased;
+    font-family: 'icomoon';
+    font-style: normal;
+    text-align: center;
+    speak: none;
+    font-weight: normal;
+    line-height: 2.5;
+    font-size: 2em;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin: -1.250em 0 0 0;
+    height: 2.500em;
+    width: 2.500em;
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-font-smoothing: antialiased;
 }
 
 .cbp-contentslider .icon-wolf:before {
-	content: "\56";
+    content: "\56";
 }
 
 .cbp-contentslider .icon-rabbit:before {
-	content: "\52";
+    content: "\52";
 }
 
 .cbp-contentslider .icon-turtle:before {
-	content: "\54";
+    content: "\54";
 }
 
 .cbp-contentslider .icon-platypus:before {
-	content: "\42";
+    content: "\42";
 }
 
 .cbp-contentslider .icon-aligator:before {
-	content: "\41";
+    content: "\41";
 }
 
-.cbp-contentslider [class^="icon-"].rc-active:before, 
+.cbp-contentslider [class^="icon-"].rc-active:before,
 .cbp-contentslider [class*=" icon-"].rc-active:before,
 .cbp-contentslider nav a:hover:before {
-	color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .cbp-contentslider h3 {
-	font-size: 2.6em;
-	height: 1.8em;
+    font-size: 2.6em;
+    height: 1.8em;
     letter-spacing: 4px;
-	line-height: 1.7;
-	font-weight: 900;
-	margin: 0 0 0.3em;
-	position: relative;
-	text-align: right;
+    line-height: 1.7;
+    font-weight: 900;
+    margin: 0 0 0.3em;
+    position: relative;
+    text-align: right;
     text-transform: uppercase;
-	padding: 0 0.2em 0 0;
-	border-bottom: 1px solid #dedede;
+    padding: 0 0.2em 0 0;
+    border-bottom: 1px solid #dedede;
 }
 
-.cbp-contentslider h3[class^="icon-"]:before, 
+.cbp-contentslider h3[class^="icon-"]:before,
 .cbp-contentslider h3[class*=" icon-"]:before {
-	top: 0;
-	left: 0;
-	width: 2em;
-	line-height: 1;
-	height: 1.2em;
-	margin: 0;
-	color:#58524C;
+    top: 0;
+    left: 0;
+    width: 2em;
+    line-height: 1;
+    height: 1.2em;
+    margin: 0;
+    color: #58524C;
 }
 
-.cbp-contentslider li > div {
-	position: absolute;
-	top: 9em;
-	bottom: 3.313em;
-	width: 100%;
-	left: 0;
-	padding: 0 1em;
-	overflow-x: hidden;
-	overflow-y: auto;
+.cbp-contentslider li>div {
+    position: absolute;
+    top: 9em;
+    bottom: 3.313em;
+    width: 100%;
+    left: 0;
+    padding: 0 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .cbp-contentslider .cbp-content {
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	-o-column-count: 2;
-	column-count: 2;
-	-webkit-column-gap: 1em;
-	-moz-column-gap: 1em;
-	-o-column-gap: 1em;
-	column-gap: 1em;
-	vertical-align: top;	
-	padding: 1em 0;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    -o-column-gap: 1em;
+    column-gap: 1em;
+    vertical-align: top;
+    padding: 1em 0;
 }
 
 .cbp-contentslider p {
-	color: #4F2D21;
-	padding: 0 0.5em 0.4em;
-	margin: 0;
-	font-size: 1.2em;
-	font-weight: 300;
-	text-align: justify;
-	line-height: 1.6;
+    color: #4F2D21;
+    padding: 0 0.5em 0.4em;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6;
 }
+
 
 /* Media queries */
 
-@media screen and (max-width: 70em) { 
-	.cbp-contentslider p {
-		font-size: 100%;
-	}
+@media screen and (max-width: 70em) {
+    .cbp-contentslider p {
+        font-size: 100%;
+    }
 }
 
 @media screen and (max-width: 67.75em) {
-
-	.cbp-contentslider { font-size: 85%; }
-
-	.cbp-contentslider nav a[class^="icon-"]:before, 
-	.cbp-contentslider nav a[class*=" icon-"]:before {
-		left: 50%;
-		margin-left: -1.250em;
-	}
-
-	.cbp-contentslider nav a span {
-		display: none;
-	}
+    .cbp-contentslider {
+        font-size: 85%;
+    }
+    .cbp-contentslider nav a[class^="icon-"]:before,
+    .cbp-contentslider nav a[class*=" icon-"]:before {
+        left: 50%;
+        margin-left: -1.250em;
+    }
+    .cbp-contentslider nav a span {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 43em) {
-
-	.cbp-contentslider h3 {
-		font-size: 2em;
-	}
-
-	.cbp-contentslider .cbp-content {
-		-webkit-column-count: 1;
-		-moz-column-count: 1;
-		-o-column-count: 1;
-		column-count: 1;
-	}
-
-	.cbp-contentslider li > div {
-		top: 5em;
-	}
-
+    .cbp-contentslider h3 {
+        font-size: 2em;
+    }
+    .cbp-contentslider .cbp-content {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        -o-column-count: 1;
+        column-count: 1;
+    }
+    .cbp-contentslider li>div {
+        top: 5em;
+    }
 }
 
-@media screen and (max-width: 25em) { 
-	.cbp-contentslider nav a { padding: 0;}
-	.cbp-contentslider h3[class^="icon-"]:before, 
-	.cbp-contentslider h3[class*=" icon-"]:before { display: none;}
+@media screen and (max-width: 25em) {
+    .cbp-contentslider nav a {
+        padding: 0;
+    }
+    .cbp-contentslider h3[class^="icon-"]:before,
+    .cbp-contentslider h3[class*=" icon-"]:before {
+        display: none;
+    }
 }
