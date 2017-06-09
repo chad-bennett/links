@@ -10,7 +10,7 @@ body,
 body {
     /* background: #aac1bf; bluegreen color */
     background: url(../noisy-texture.png), linear-gradient(to top, #35c7e9 0%, #0687be 100%) ;
-    overflow: visible;
+    overflow: hidden;
     background-blend-mode: multiply, multiply;
     color: #666;
 }
