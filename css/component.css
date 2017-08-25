@@ -9,7 +9,7 @@ body,
 
 body {
     /* background: #aac1bf; bluegreen color */
-    background: url(../noisy-texture.png), linear-gradient(to top, #35c7e9 0%, #0687be 100%) ;
+    background: url(../noisy-texture.png), linear-gradient(to top, #35c7e9 0%, #0687be 100%);
     overflow: hidden;
     background-blend-mode: multiply, multiply;
     color: #666;
@@ -106,7 +106,7 @@ a {
 }
 
 .cbp-contentslider nav a.rc-active {
-    background-color:#0687be;
+    background-color: #0687be;
     color: #fff;
 }
 
@@ -263,4 +263,19 @@ a {
     .cbp-contentslider h3[class*=" icon-"]:before {
         display: none;
     }
+}
+
+
+/* hack for about page formatting */
+
+.about a {
+    font-size: 1.2em !important;
+    font-weight: 700 !important;
+    display: inline !important;
+    margin-left: 0 !important;
+    line-height: 1.6em !important;
+}
+
+.about a:hover {
+    letter-spacing: normal !important;
 }
