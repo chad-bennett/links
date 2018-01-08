@@ -16,12 +16,13 @@ body {
 }
 
 a {
-    color: #fff;
-    transition: color .4s, letter-spacing .3s;
+    color: #fff6;
+    transition: color .3s, letter-spacing .3s;
 }
 
 a:hover {
-    color: #c06c84;
+    color: #fff;
+    font-weight: 400;
 }
 
 
@@ -80,7 +81,7 @@ a:hover {
     width: 20%;
     height: 100%;
     font-weight: 900;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     overflow: hidden;
     font-size: .9em;
     outline: none;
