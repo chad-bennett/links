@@ -12,11 +12,11 @@ body {
     background: url(../noisy-texture.png), linear-gradient(to top, #6c5b7b 0%, #355c7d 100%);
     overflow: hidden;
     background-blend-mode: multiply, multiply;
-    color: #fff;
+    color: #355c7d;
 }
 
 a {
-    color: #fff;
+    color: #355c7d;
     transition: color .4s, letter-spacing .3s;
 }
 
@@ -32,7 +32,7 @@ a:hover {
     height: 70%;
     margin: 1em auto;
     position: relative;
-   /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)*/
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
 }
 
 .cbp-contentslider > ul {
@@ -52,8 +52,8 @@ a:hover {
     left: 0;
     top: 0;
     padding: 1em;
-        /* background: #fffcf4;
-        background-image: url(../noisy-texture.png);*/
+    background: #fffcf4;
+    /* background-image: url(../noisy-texture.png);*/
 }
 
 
@@ -89,6 +89,7 @@ a:hover {
     position: relative;
     padding-left: 3.125em;
     text-transform: uppercase;
+    border-right: 1px solid #dedede;
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -110,7 +111,7 @@ a:hover {
 }
 
 .cbp-contentslider nav a.rc-active {
-    background-color: #fff3;
+    background-color: #355c7d;
     color: #fff;
 }
 
