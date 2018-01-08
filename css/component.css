@@ -22,7 +22,8 @@ a {
 
 a:hover {
     color: #fff;
-    font-weight: 400;
+    letter-spacing: 1.9px;
+    font-weight: 300;
 }
 
 
