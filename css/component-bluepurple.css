@@ -8,20 +8,22 @@ body,
 }
 
 body {
-    background: linear-gradient(to top, #8c9e9d 0%, #aac1bf 100%);
+    /* background: #aac1bf; bluegreen color */
+    background: url(../noisy-texture.png), linear-gradient(to top, #6c5b7b 0%, #355c7d 100%);
     overflow: hidden;
-    color: #000;
+    background-blend-mode: multiply, multiply;
+    color: #fff;
 }
 
 a {
-    color: #333;
+    color: #fff6;
     transition: color .3s, letter-spacing .3s;
 }
 
 a:hover {
-    color: #000;
+    color: #fff;
     letter-spacing: 1.9px;
-    font-weight: 800;
+    font-weight: 300;
 }
 
 
@@ -105,13 +107,13 @@ a:hover {
 }
 
 .cbp-contentslider nav a:hover {
-    background-color: #333;
+    background-color: #596280;
     color: #fff;
 }
 
 .cbp-contentslider nav a.rc-active {
-    background-color: #fff4;
-    color: #000;
+    background-color: #fff3;
+    color: #fff;
 }
 
 
@@ -173,7 +175,7 @@ a:hover {
     text-align: right;
     text-transform: uppercase;
     padding: 0 0.2em 0 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #dedede;
 }
 
 .cbp-contentslider h3[class^="icon-"]:before,
