@@ -68,10 +68,11 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3.313em;
+    height: 4em;
     z-index: 1000;
-    border-top: 0px solid #4F2D21;
+    border-top: 1px solid #4F2D21;
     overflow: hidden;
+    padding-top: 1em;
 }
 
 .cbp-contentslider nav a {
@@ -173,7 +174,7 @@ a:hover {
     text-align: right;
     text-transform: uppercase;
     padding: 0 0.2em 0 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #4F2D21;
 }
 
 .cbp-contentslider h3[class^="icon-"]:before,
