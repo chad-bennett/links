@@ -13,6 +13,9 @@ body {
     color: #332e29;
 }
 
+.container { background: url(../noisy-texture.png);}
+
+
 a {
     color: #333;
     transition: color .3s, letter-spacing .3s;
