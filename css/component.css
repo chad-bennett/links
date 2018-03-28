@@ -8,7 +8,7 @@ body,
 }
 
 body {
-    background: linear-gradient(to top, #8c9e9d 0%, #aac1bf 100%);
+    background: linear-gradient(to top, hsl(200, 26%, 47%)  0%, hsl(200, 41%, 78%) 100%);
     overflow: hidden;
     color: #000;
 }
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .cbp-contentslider nav a.rc-active {
-    background-color: #aac1bf ;
+    background-color: hsl(200, 35%, 67%);
     color: #000;
 }
 
