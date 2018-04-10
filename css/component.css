@@ -73,7 +73,7 @@ a:hover {
     right: 0;
     height: 4em;
     z-index: 1000;
-    border-top: 1px solid #4F2D21;
+    border-top: 1px solid #332e29;
     overflow: hidden;
     padding-top: 1em;
 }
@@ -177,7 +177,7 @@ a:hover {
     text-align: right;
     text-transform: uppercase;
     padding: 0 0.2em 0 0;
-    border-bottom: 1px solid #4F2D21;
+    border-bottom: 1px solid #332e29;
 }
 
 .cbp-contentslider h3[class^="icon-"]:before,
