@@ -111,7 +111,8 @@ a:hover {
 }
 
 .cbp-contentslider nav a.rc-active {
-    background-color: #355c7d;
+    /* background-color: #355c7d; */
+    background-color: #cbbfb170;
     color: #fff;
 }
 
