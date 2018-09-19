@@ -8,14 +8,12 @@ body,
 }
 
 body {
-    background-image: radial-gradient(circle at 1.99% 81.99%, #f0ddb6, transparent 100%),radial-gradient(circle at 98.01% 11.97%, #fff4d1, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%), url(../diagonal.png);
+    background: linear-gradient(to top, #aa9a8a 0%, #cbbfb1 100%);
     overflow: hidden;
-    background-blend-mode: multiply;
-    color: #474340;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, Ubuntu, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #332e29;
 }
 
-/*.container { background: url(../noisy-texture.png);}*/
+.container { background: url(../noisy-texture.png);}
 
 
 a {
@@ -37,9 +35,7 @@ a:hover {
     height: 70%;
     margin: 1em auto;
     position: relative;
-   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    background: #fffdf3;
-    border-radius:1em;
+   /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)*/
 }
 
 .cbp-contentslider > ul {
@@ -58,8 +54,9 @@ a:hover {
     height: 100%;
     left: 0;
     top: 0;
-    padding: 2em;
-
+    padding: 1em;
+        /* background: #fffcf4;
+        background-image: url(../noisy-texture.png);*/
 }
 
 
@@ -74,11 +71,11 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 5em;
+    height: 4em;
     z-index: 1000;
+    border-top: 1px solid #332e29;
     overflow: hidden;
-    padding: 1em;
-    padding-bottom: 0;
+    padding-top: 1em;
 }
 
 .cbp-contentslider nav a {
@@ -86,19 +83,19 @@ a:hover {
     display: block;
     width: 20%;
     height: 100%;
-    font-weight: 600;
+    font-weight: 900;
+    letter-spacing: 0.2em;
     overflow: hidden;
-    letter-spacing:0;
-   /* font-size: .9em; */
+    font-size: .9em;
     outline: none;
     text-align: center;
     line-height: 3;
     position: relative;
     padding-left: 3.125em;
     text-transform: uppercase;
-    -webkit-transition: color 0.2s ease-in-out, transform  0.2s ease-in-out, letter-spacing .2s ease, font-weight .2s ease;
-    -moz-transition: color 0.2s ease-in-out, transform  0.2s ease-in-out, letter-spacing .2s ease, font-weight .2s ease;
-    transition: color 0.2s ease-in-out, transform  0.2s ease-in-out, letter-spacing .2s ease, font-weight .2s ease;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .cbp-contentslider nav a span {
@@ -112,22 +109,15 @@ a:hover {
 }
 
 .cbp-contentslider nav a:hover {
-    transform: translateY(-5px);
-    color: teal;
-    border-top:3px solid teal;
-    font-weight: 900;
+    background-color: #333;
+    color: #fff;
 }
 
 .cbp-contentslider nav a.rc-active {
-    border-top:1px solid teal;
+    background-color: #cbbfb170;
     color: #000;
-    font-weight: 900;
 }
 
-.cbp-contentslider nav a.rc-active:hover {
-    border-top:3px solid teal;
-    color: teal;
-}
 
 /* Iconfont for navigation and headings */
 
