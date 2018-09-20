@@ -1,4 +1,8 @@
-/* Needed for a fluid height: */
+
+:root {
+    --accent: #116da9;
+}
+
 
 html,
 body,
@@ -24,7 +28,7 @@ a {
 }
 
 a:hover {
-    color: #332e29;
+    color: var(--accent);
     letter-spacing: 1.9px;
     font-weight: 800;
 }
@@ -113,20 +117,20 @@ a:hover {
 
 .cbp-contentslider nav a:hover {
     transform: translateY(-5px);
-    color: teal;
-    border-top:3px solid teal;
+    color: var(--accent);
+    border-top:3px solid var(--accent);
     font-weight: 900;
 }
 
 .cbp-contentslider nav a.rc-active {
-    border-top:1px solid teal;
+    border-top:1px solid var(--accent);
     color: #000;
     font-weight: 900;
 }
 
 .cbp-contentslider nav a.rc-active:hover {
-    border-top:3px solid teal;
-    color: teal;
+    border-top:3px solid var(--accent);
+    color: var(--accent);
 }
 
 /* Iconfont for navigation and headings */
