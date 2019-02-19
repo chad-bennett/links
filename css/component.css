@@ -1,4 +1,8 @@
-/* Needed for a fluid height: */
+
+:root {
+    --accent: #116da9;
+}
+
 
 html,
 body,
@@ -8,20 +12,29 @@ body,
 }
 
 body {
-    /* background: #aac1bf; bluegreen color */
-    background: url(../noisy-texture.png), linear-gradient(to top, #6c5b7b 0%, #355c7d 100%);
+    background-image: radial-gradient(circle at 1.99% 81.99%, #f0ddb6, transparent 100%),radial-gradient(circle at 98.01% 11.97%, #fff4d1, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%), url(../diagonal.png);
     overflow: hidden;
-    background-blend-mode: multiply, multiply;
-    color: #355c7d;
+    background-blend-mode: multiply;
+    color: #474340;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, Ubuntu, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/*.container { background: url(../noisy-texture.png);}*/
+
+
 a {
-    color: #355c7d;
-    transition: color .4s, letter-spacing .3s;
+    color: #333;
+    transition: color .3s, letter-spacing .3s;
 }
 
 a:hover {
-    color: #c06c84;
+    color: var(--accent);
+    letter-spacing: 1.9px;
+    font-weight: 800;
+}
+
+a:active, a:focus {
+    outline: none;
 }
 
 
@@ -32,7 +45,9 @@ a:hover {
     height: 70%;
     margin: 1em auto;
     position: relative;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    background: #fffdf3;
+    border-radius:1em;
 }
 
 .cbp-contentslider > ul {
@@ -51,9 +66,8 @@ a:hover {
     height: 100%;
     left: 0;
     top: 0;
-    padding: 1em;
-    background: #fffcf4;
-    /* background-image: url(../noisy-texture.png);*/
+    padding: 2em;
+
 }
 
 
@@ -68,10 +82,11 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3.313em;
+    height: 5em;
     z-index: 1000;
-    border-top: 0px solid #4F2D21;
     overflow: hidden;
+    padding: 1em;
+    padding-bottom: 0;
 }
 
 .cbp-contentslider nav a {
@@ -79,20 +94,19 @@ a:hover {
     display: block;
     width: 20%;
     height: 100%;
-    font-weight: 900;
-    letter-spacing: 0.1em;
+    font-weight: 600;
     overflow: hidden;
-    font-size: .9em;
+    letter-spacing:0;
+   /* font-size: .9em; */
     outline: none;
     text-align: center;
     line-height: 3;
     position: relative;
     padding-left: 3.125em;
     text-transform: uppercase;
-    border-right: 1px solid #dedede;
-    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, transform  0.2s ease-in-out, letter-spacing .2s ease, font-weight .2s ease;
+    -moz-transition: color 0.2s ease-in-out, transform  0.2s ease-in-out, letter-spacing .2s ease, font-weight .2s ease;
+    transition: color 0.2s ease-in-out, transform  0.2s ease-in-out, letter-spacing .2s ease, font-weight .2s ease;
 }
 
 .cbp-contentslider nav a span {
@@ -106,16 +120,22 @@ a:hover {
 }
 
 .cbp-contentslider nav a:hover {
-    background-color: #596280;
-    color: #fff;
+    transform: translateY(-5px);
+    color: var(--accent);
+    border-top:3px solid var(--accent);
+    font-weight: 900;
 }
 
 .cbp-contentslider nav a.rc-active {
-    /* background-color: #355c7d; */
-    background-color: rgba(203, 191, 177, 0.7);
-    color: #fff;
+    border-top:1px solid var(--accent);
+    color: #000;
+    font-weight: 900;
 }
 
+.cbp-contentslider nav a.rc-active:hover {
+    border-top:3px solid var(--accent);
+    color: var(--accent);
+}
 
 /* Iconfont for navigation and headings */
 
@@ -175,7 +195,6 @@ a:hover {
     text-align: right;
     text-transform: uppercase;
     padding: 0 0.2em 0 0;
-    border-bottom: 1px solid #dedede;
 }
 
 .cbp-contentslider h3[class^="icon-"]:before,
@@ -218,7 +237,7 @@ a:hover {
     padding: 0 0.5em 0.4em;
     margin: 0;
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
     line-height: 1.6;
 }
