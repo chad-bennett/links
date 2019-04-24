@@ -116,7 +116,7 @@ letter-spacing: 1.2px;
 	background: #4F2D21;
 }
 
-.icon-drop:before,
+.icon-drop:before, 
 .icon-arrow-left:before {
 	font-family: 'fontawesome';
 	position: absolute;
@@ -145,3 +145,4 @@ letter-spacing: 1.2px;
 .icon-arrow-left:before {
 	content: "\f060";
 }
+

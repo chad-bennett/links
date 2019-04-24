@@ -1,7 +1,6 @@
 
 :root {
-    --accent: #5d8ea4;
-    --black: #474340;
+    --accent: #116da9;
 }
 
 
@@ -13,10 +12,10 @@ body,
 }
 
 body {
-    background: var(--accent) url(../diagonal.png);
+    background-image: radial-gradient(circle at 1.99% 81.99%, #f0ddb6, transparent 100%),radial-gradient(circle at 98.01% 11.97%, #fff4d1, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%), url(../diagonal.png);
     overflow: hidden;
     background-blend-mode: multiply;
-    color: var(--black);
+    color: #474340;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, Ubuntu, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -24,12 +23,12 @@ body {
 
 
 a {
-    color: var(--black);
+    color: #333;
     transition: color .3s, letter-spacing .3s;
 }
 
 a:hover {
-color: var(--black);
+    color: var(--accent);
     letter-spacing: 1.9px;
     font-weight: 800;
 }
@@ -46,7 +45,7 @@ a:active, a:focus {
     height: 70%;
     margin: 1em auto;
     position: relative;
-   box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
     background: #fffdf3;
     border-radius:1em;
 }
@@ -159,6 +158,26 @@ a:active, a:focus {
     -webkit-font-smoothing: antialiased;
 }
 
+.cbp-contentslider .icon-wolf:before {
+    content: "\56";
+}
+
+.cbp-contentslider .icon-rabbit:before {
+    content: "\52";
+}
+
+.cbp-contentslider .icon-turtle:before {
+    content: "\54";
+}
+
+.cbp-contentslider .icon-platypus:before {
+    content: "\42";
+}
+
+.cbp-contentslider .icon-aligator:before {
+    content: "\41";
+}
+
 .cbp-contentslider [class^="icon-"].rc-active:before,
 .cbp-contentslider [class*=" icon-"].rc-active:before,
 .cbp-contentslider nav a:hover:before {
@@ -166,8 +185,7 @@ a:active, a:focus {
 }
 
 .cbp-contentslider h3 {
-color: var(--black);
-    font-size: 2.8em;
+    font-size: 2.6em;
     height: 1.8em;
     letter-spacing: 4px;
     line-height: 1.7;
@@ -215,7 +233,7 @@ color: var(--black);
 }
 
 .cbp-contentslider p {
-    color: var(--black);
+    color: #4F2D21;
     padding: 0 0.5em 0.4em;
     margin: 0;
     font-size: 1.2em;
