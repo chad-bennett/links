@@ -14,7 +14,7 @@
       --secondary-blue: #3c8bb9;
       --secondary-color: linear-gradient(45deg, #3c8bb9 0%, #1f6289 74%);
       --white-color: #f8f8f8;
-      --background: radial-gradient(circle at 9.32% 85.19%, #6abbc4, transparent 100%),radial-gradient(circle at 87.18% 42.66%, #6e7db5, transparent 100%),radial-gradient(circle at 50% 50%, #d12f9c, #d12f9c 100%);
+      --background: radial-gradient(circle at 9.32% 85.19%, #6abbc4, transparent 100%), radial-gradient(circle at 87.18% 42.66%, #6e7db5, transparent 100%), radial-gradient(circle at 50% 50%, #d12f9c, #d12f9c 100%);
       --shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), 2px 2px 2px rgba(0, 0, 0, 0.08),
         4px 4px 4px rgba(0, 0, 0, 0.08), 8px 8px 8px rgba(0, 0, 0, 0.08);
       --border-radius: 0.6rem;
@@ -29,15 +29,15 @@
       background-attachment: fixed;
       background-size: cover;
       font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Microsoft YaHei Light", sans-serif;
     }
 
     nav {
       background-color: var(--black-color);
       padding: .5rem;
       position: relative;
-      top: 10rem;
+      top: 8rem;
       width: 70vw;
       display: grid;
       place-items: center;
@@ -62,7 +62,7 @@
       text-align: center;
       display: inline-block;
       color: var(--white-color);
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     .dropdown__title {
@@ -88,8 +88,8 @@
     nav>ul>li .dropdown__title:hover,
     nav>ul>li>a:focus,
     nav>ul>li .dropdown__title:focus {
-      text-decoration: underline;
       box-shadow: none;
+      color: fff;
     }
 
     nav ul {
@@ -132,18 +132,18 @@
       transform-origin: top center;
       visibility: hidden;
       opacity: 0.3;
-      padding: 0.5em 0;
+      padding: 1rem;
       background-color: var(--white-color);
       border-radius: 4px;
       box-shadow: var(--shadow);
-      z-index:10;
+      z-index: 10;
     }
 
     .dropdown .dropdown__menu a {
       color: var(--black-color);
       display: block;
       background: none;
-      padding: .8rem;
+      padding: .5rem 1rem;
       opacity: 0;
       box-shadow: none;
       transition: 200ms all 120ms ease-out;
@@ -194,9 +194,9 @@
 
     @media screen and (max-width: 45em) {
       nav>ul {
-    grid-auto-flow: row;
-    text-align: center;
-}
+        grid-auto-flow: row;
+        text-align: center;
+      }
     }
   </style>
 </head>
