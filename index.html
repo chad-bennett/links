@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
-      --black-color: #494742;
+      --black-color: #494742cc;
       --blue-color: #1f6289;
       --secondary-blue: #3c8bb9;
       --secondary-color: linear-gradient(45deg, #3c8bb9 0%, #1f6289 74%);
@@ -45,8 +45,9 @@
       box-shadow: var(--shadow);
       margin: auto;
       border-radius: 1rem;
+      border-top: 1px solid #ffffff55;
+    border-left: 1px solid #ffffff55;
     }
-
 
     nav>ul {
       grid-auto-flow: column;
@@ -111,16 +112,6 @@
       display: inline-flex;
       align-items: center;
     }
-
-    /*
-    .dropdown .dropdown__title:after {
-      content: "";
-      border: 0.35rem solid transparent;
-      border-top-color: var(--white-color);
-      margin-left: 0.25em;
-      transform: translateY(0.15em);
-    }
-*/
 
     .dropdown .dropdown__menu {
       position: absolute;
@@ -192,7 +183,7 @@
       opacity: 1;
     }
 
-    @media screen and (max-width: 45em) {
+    @media screen and (max-width: 50em) {
       nav>ul {
         grid-auto-flow: row;
         text-align: center;
