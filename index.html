@@ -124,10 +124,13 @@
       visibility: hidden;
       opacity: 0.3;
       padding: 1rem;
-      background-color: var(--white-color);
+      background-color: #f8f8f8bb;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
       border-radius: 4px;
       box-shadow: var(--shadow);
       z-index: 10;
+      border: 0 solid transparent;
     }
 
     .dropdown .dropdown__menu a {
@@ -153,7 +156,7 @@
     .dropdown:after {
       content: "";
       border: 0.5rem solid transparent;
-      border-bottom-color: var(--white-color);
+      border-bottom-color: #f8f8f8bb;
       position: absolute;
       top: calc(100% - 1.25rem);
       left: 50%;
@@ -171,6 +174,8 @@
       opacity: 1;
       transform: rotateX(0) translateX(-50%);
       visibility: visible;
+      backdrop-filter: blur(2px) opacity(50%);
+      -webkit-backdrop-filter: blur(2px) opacity(50%);
     }
 
     .dropdown:hover .dropdown__menu a,
@@ -181,6 +186,8 @@
     .dropdown:hover:after,
     .dropdown:focus-within:after {
       opacity: 1;
+      backdrop-filter: blur(2px) opacity(50%);
+      -webkit-backdrop-filter: blur(2px) opacity(50%);
     }
 
     @media screen and (max-width: 50em) {
@@ -259,6 +266,7 @@
           <li class="menu-item"><a href="https://open.spotify.com/collection/playlists">spotify</a>
           </li>
           <li class="menu-item"><a href="https://simplynoise.com/">simply noise</a></li>
+          <li class="menu-item"><a href="https://www.tree.fm/">tree.fm</a></li>
           <li class="menu-item"><a href="https://www.noisli.com/">noisli</a></li>
           <li class="menu-item"><a href="https://mynoise.net/">my noise</a></li>
           <li class="menu-item"><a href="https://www.calm.com/">calm</a></li>
