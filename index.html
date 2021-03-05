@@ -124,9 +124,10 @@
       visibility: hidden;
       opacity: 0.3;
       padding: 1rem;
-      background-color: #fffc;
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
+      background-color: #fffa;
+      border: .5px solid #fffe;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       border-radius: 4px;
       box-shadow: var(--shadow);
       z-index: 10;
@@ -153,9 +154,10 @@
       background-color: rgba(102, 51, 153, 0.25);
     }
 
-    .dropdown:after {
+    /*.dropdown:after {
       content: "";
       border: 0.5rem solid transparent;
+      border-bottom-color: transparent;
       border-bottom-color: #fffc;
       position: absolute;
       top: calc(100% - 1.25rem);
@@ -164,7 +166,7 @@
       transition: 200ms all 120ms ease-out;
       opacity: 0;
       will-change: opacity;
-    }
+    }*/
 
     .dropdown:hover .dropdown__title,
     .dropdown:focus-within .dropdown__title {}
@@ -174,8 +176,9 @@
       opacity: 1;
       transform: rotateX(0) translateX(-50%);
       visibility: visible;
-      backdrop-filter: blur(2px) opacity(50%);
-      -webkit-backdrop-filter: blur(2px) opacity(50%);
+      border: .5px solid #fffe;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
 
     .dropdown:hover .dropdown__menu a,
@@ -186,8 +189,9 @@
     .dropdown:hover:after,
     .dropdown:focus-within:after {
       opacity: 1;
-      backdrop-filter: blur(2px) opacity(50%);
-      -webkit-backdrop-filter: blur(2px) opacity(50%);
+      border: .5px solid #fffe;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
 
     @media screen and (max-width: 50em) {
