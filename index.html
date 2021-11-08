@@ -37,6 +37,7 @@
   <style>
     :root {
       --black-color: #494742dd;
+      --black-fade: linear-gradient(0deg,#494742dd 0%, #5c544ce1 100%);
       --blue-color: #1f6289;
       --secondary-blue: #3c8bb9;
       --secondary-color: linear-gradient(45deg, #3c8bb9 0%, #1f6289 74%);
@@ -60,7 +61,7 @@
     }
 
     nav {
-      background: url(noise.svg), var(--black-color);
+      background: var(--black-fade);
       background-blend-mode: overlay;
       padding: .5rem;
       position: relative;
@@ -226,7 +227,7 @@
       .dropdown .dropdown__menu {
         top: calc(100% - 2.5rem);
         width: 10rem;
-        left: 11rem;
+        left: 12rem;
       }
     }
   </style>
